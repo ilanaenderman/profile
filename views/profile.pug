@@ -1,0 +1,465 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Portfolio Ilana Enderman
+    // Bootstrap Core CSS
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+    // Custom CSS
+    link(rel='stylesheet', type='text/css', href='css/landing-page.css')
+    link(rel='stylesheet', type='text/css', href='css/scrolling-nav.css')
+    // Custom Fonts
+    link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css', type='text/css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic', type='text/css')
+    link(rel='stylesheet', href='https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+  body#page-top.index
+    // Navigation bar
+    nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top(role='navigation')
+      .container
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header.page-scroll
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            i.fa.fa-bars
+          a.navbar-brand.page-scroll(href='#page-top') Ilana Enderman
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a.page-scroll(href='#about') About
+            li
+              a.page-scroll(href='#abilities') Abilities
+            li
+              a.page-scroll(href='#portfolio') Projects
+            li
+              a.page-scroll(href='#experience') Experience
+            li
+              a.page-scroll(href='#contact1') Contact
+        // /.navbar-collapse
+      // /.container
+
+    // Header
+    a(name='home')
+    #home1.intro-header
+      .container
+        .row
+          .col-lg-12
+            .intro-message
+              h1 Ilana Enderman
+              h3 Junior Full-Stack Developer in training
+              h3 In search of a traineeship, starting in Januari 2017
+              hr.intro-divider
+              ul.list-inline.intro-social-buttons
+                li
+                  a.btn.btn-default.btn-lg(href='https://github.com/ilanaenderman')
+                    i.fa.fa-github.fa-fw
+                    span.network-name Github
+                li
+                  a.btn.btn-default.btn-lg(href='https://nl.linkedin.com/in/ilanaenderman')
+                    i.fa.fa-linkedin.fa-fw
+                    span.network-name Linkedin
+      // /.container
+
+    // /.intro-header
+    // Page About
+    a(name='#')
+    #about.content-section-a
+      .container
+        .row
+          .col-lg-5.col-sm-6
+            hr.section-heading-spacer
+            .clearfix
+            h2.featurette-heading
+              | About 
+              span.text-muted Ilana Enderman
+            p.lead
+              br
+              | I am a student at the B. Startup School Amsterdam studying full-stack development: Javascript, lectured by the New York Coding + Design Academy. My background is in European Studies, specialized in European Economics and Policy, with a minor in Spanish.
+              br
+              br
+              | As a Europe expert I am interested in social issues, in particular sustainability and development. Other interests of mine are traveling and surfing, often combined.
+          .col-lg-5.col-lg-offset-2.col-sm-6
+            img.img-responsive(src='img/ilana.jpg', alt='')
+      // /.container
+
+    // /.Abililties-b
+    #abilities.content-section-a
+      .container
+        hr.section-heading-spacer
+        .clearfix
+        h2.featurette-heading
+          | Abilities 
+          span.text-muted Coding Skills
+        p.lead
+          br
+        .devicon
+          .col-lg-3
+            i.devicon-github-plain-wordmark
+          .col-lg-3
+            i.devicon-html5-plain-wordmark
+          .col-lg-3
+            i.devicon-css3-plain-wordmark
+          .col-lg-3
+            i.devicon-javascript-plain
+          .col-lg-3
+            i.devicon-jquery-plain-wordmark
+          .col-lg-3
+            i.devicon-nodejs-plain
+          .col-lg-3
+            i.devicon-postgresql-plain-wordmark
+          .col-lg-3
+            i.devicon-bootstrap-plain-wordmark
+          .col-lg-3
+            i.devicon-sass-original
+    //.container
+
+    // Portfolio Grid Section
+    section#portfolio.content-section-b
+      .container
+        hr.section-heading-spacer
+        .clearfix
+        h2.featurette-heading
+          | Projects 
+          span.text-muted NYCDA
+        p.lead
+          br
+        .row
+          .col-lg-12.text-center
+        .row
+          .col-sm-4.portfolio-item
+            a.portfolio-link(href='#portfolioModal1', data-toggle='modal')
+              .caption
+                .caption-content
+                  i.fa.fa-search-plus.fa-3x
+              img.img-responsive(src='img/guesthouse.png', alt='')
+            .portfolio-caption
+              h4 Business Website
+              p.text-muted Ola Onda Guesthouse
+          .col-sm-4.portfolio-item
+            a.portfolio-link(href='#portfolioModal2', data-toggle='modal')
+              .caption
+                .caption-content
+                  i.fa.fa-search-plus.fa-3x
+              img.img-responsive(src='img/userAdd.png', alt='')
+            .portfolio-caption
+              h4 Application
+              p.text-muted User Information
+          .col-sm-4.portfolio-item
+            a.portfolio-link(href='#portfolioModal3', data-toggle='modal')
+              .caption
+                .caption-content
+                  i.fa.fa-search-plus.fa-3x
+              img.img-responsive(src='img/bulletinAdd.png', alt='')
+            .portfolio-caption
+              h4 Application
+              p.text-muted Bulletin Board
+          .col-sm-4.portfolio-item
+            a.portfolio-link(href='#portfolioModal4', data-toggle='modal')
+              .caption
+                .caption-content
+                  i.fa.fa-search-plus.fa-3x
+              img.img-responsive(src='img/blog.png', alt='')
+            .portfolio-caption
+              h4 Application
+              p.text-muted Blog
+          .col-sm-4.portfolio-item
+            a.portfolio-link(href='#portfolioModal5', data-toggle='modal')
+              .caption
+                .caption-content
+                  i.fa.fa-search-plus.fa-3x
+              img.img-responsive(src='img/sj2.png', alt='')
+            .portfolio-caption
+              h4 Application
+              p.text-muted Street Journal
+          .col-sm-4.portfolio-item
+            a.portfolio-link(href='#portfolioModal6', data-toggle='modal')
+              .caption
+                .caption-content
+                  i.fa.fa-search-plus.fa-3x
+              img.img-responsive(src='img/langga1.png', alt='')
+            .portfolio-caption
+              h4 Application
+              p.text-muted Language Game
+    //.container
+
+    // /.experience
+    #experience.content-section-b
+      .container
+        hr.section-heading-spacer
+        .clearfix
+        h2.featurette-heading
+          | Experience 
+          span.text-muted Background
+        p.lead
+          br
+        h3.title Education
+        .experience.row
+          .col-md-4
+            h4.exp
+              strong New York Code + Design Academy
+            p.lead Sep 2016 - Jun 2017
+          .col-md-8
+            h4 Full-stack Javascript developer
+            span
+              p.lead
+                | Course provided by the B. Startup School Amsterdam. This full-time intensive web development program wants to transform beginner students into entry level full stack developers.
+            p
+              br
+        .experience.row
+          .col-md-4
+            h4.exp
+              strong University of Amsterdam
+            p.lead Sep 2014 - Aug 2015
+          .col-md-8
+            h4 Master European Studies
+            span
+              li.lead1 Specialization: Institutional Integration of Europe
+              p.lead
+                | During this master I studied contemporary Europe and the EU. It learned me how to unravel the various political, legal, economic and historical patterns that affect contemporary international governance and policy in Europe and its border regions.
+            p
+              br
+        .experience.row
+          .col-md-4
+            h4.exp
+              strong University of Amsterdam
+            p.lead Sep 2014 - Aug 2015
+          .col-md-8
+            h4 Bachelor - European Studies
+            span
+              li.lead1 Major: Economics
+              li.lead1 Minor: Spanish language and culture
+              p.lead
+                | The study provided me with a broad knowlegde of Europe as I studied various aspect, such as the politics and culture of European countries in the past and present, the building of nations states and the formation of the EU.
+        hr.divider
+        h3.title Carreer
+        .experience.row
+          .col-md-4
+            h4.exp
+              strong Spring Associates
+            p.lead Jul 2016 - Sep 2016
+          .col-md-8
+            h4 Interim Sustainability Consultant
+            span
+              p.lead
+                | At this consultacy specialized in sustainability I helped with the making a of a sustainability analysis of the portfolio of a large asset manager by evaluating the sustainability performance of the investments, analysing data, scanning reports and identifying improvements.
+            p
+              br
+        .experience.row
+          .col-md-4
+            h4.exp
+              strong VNG International
+            p.lead Feb 2013 - Jul 2013
+          .col-md-8
+            h4 Intern
+            span
+              p.lead
+                | At the association of Dutch municipalities international I had a supporting role on various projects on local government and international relations. I was involved in acquisition, organizing study visits and the realization of the UCLG Position and Policy Paper on Aid Effectiveness and Local Government.
+    // /.container
+    // /.banner
+
+    // Footer
+    footer
+      #contact1.container
+        .row
+          hr#section-heading-spacer1
+          .clearfix
+          h2.featurette-heading
+            | Contact 
+            span.text-muted Information
+          p.lead
+            br
+          p.mail.lead
+            | Feel free to contact me
+          p.lead
+            span.mail.glyphicon.glyphicon-envelope
+            a.mail(href='mailto:ilanaenderman@hotmail.com?Subject=Hello%20again', target='_top')  ilanaenderman@gmail.com
+          .col-lg-12
+            p.copyright.text-muted.small Copyright © 2016 Ilana Enderman
+
+    // Portfolio Modals
+    #portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                h2.lead3 Business Website
+                h3.text-muted HTML | CSS | JAVASCRIPT | JQUERY
+                hr.star-primary
+                img.img-responsive.img-centered(src='img/guesthouse.png', alt='')
+                p.lead
+                  | Together with 
+                  a.laura(href='https://lauraxiulan.github.io/personal-website/') Laura
+                  |  I created a business website for a non-existent guesthouse as an assignment for the NYCDA course. For now it is still a static website withoud back-end.
+                ul.list-inline.item-details
+                  li
+                    | Date:&nbsp;
+                    a(href='#') October 2016
+                  li
+                    | Github:&nbsp;
+                    strong
+                      a(href='https://github.com/ilanaenderman/guesthouse-website') Code
+                  li
+                    | Website:&nbsp;
+                    strong
+                      a(href='https://lauraxiulan.github.io/guesthouse-website/guesthouse.html') Ola Onda Guesthouse
+                button.btn.btn-default(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Close
+
+    #portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                h2.lead3 User Information App
+                h3.text-muted PUG | CSS | JAVASCRIPT | AJAX | NODE.JS
+                hr.star-primary
+                img.img-responsive.img-centered(src='img/userSearch.png', alt='')
+                p.lead
+                  | For this project I created a user information app that is able to search and add users and their information.
+                ul.list-inline.item-details
+                  li
+                    | Date:&nbsp;
+                    a(href='#') October 2016
+                  li
+                    | Github:&nbsp;
+                    strong
+                      a(href='https://github.com/ilanaenderman/nycda-assignments/tree/master/user-information-app') Code
+                button.btn.btn-default(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Close
+
+    #portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                h2.lead3 Bulletin Board App
+                h3.text-muted PUG | CSS | JAVASCRIPT | NODE.JS | POSTGRESQL | EXPRESS
+                hr.star-primary
+                img.img-responsive.img-centered(src='img/bulletinShow.png', alt='')
+                p.lead An app for writing and posting messages
+                ul.list-inline.item-details
+                  li
+                    | Date:&nbsp;
+                    a(href='#') November 2016
+                  li
+                    | Github:&nbsp;
+                    strong
+                      a(href='https://github.com/ilanaenderman/bulletin-app') Code
+                button.btn.btn-default(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Close
+
+    #portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                h2.lead3 Blog App
+                h3.text-muted PUG | SASS | JAVASCRIPT | NODE.JS | EXPRESS (SESSION) | SEQUELIZE | BCRYPT
+                hr.star-primary
+                img.img-responsive.img-centered(src='img/blog2.png', alt='')
+                p.lead
+                  | App where people can write and share stories. You can register, login and comment on each other's  stories. 
+                ul.list-inline.item-details
+                  li
+                    | Date:&nbsp;
+                    a(href='#') November 2016
+                  li
+                    | Github:&nbsp;
+                    strong
+                      a(href='https://github.com/ilanaenderman/blog-app') Code
+                button.btn.btn-default(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Close
+
+    #portfolioModal5.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                h2.lead3 Street Journal App
+                h3.text-muted PUG | SASS | JAVASCRIPT | NODE.JS | SEQUELIZE | EXPRESS
+                hr.star-primary
+                img.img-responsive.img-centered(src='img/sj1.png', alt='')
+                p.lead
+                  | A way for people to buy their street journal without cash. It gives an overview of all the sellers with their background story. In admin you can add, update and delete persons. The admin also keeps track per person how many papers they sold and how much they earned. 
+                ul.list-inline.item-details
+                  li
+                    | Date:&nbsp;
+                    a(href='#') December 2016
+                  li
+                    | Github:&nbsp;
+                    strong
+                      a(href='https://github.com/ilanaenderman/straatjournaal') Code
+                button.btn.btn-default(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Close
+
+
+    #portfolioModal6.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                h2.lead3 Language Game: LangGa
+                h3.text-muted PUG | SASS | JAVASCRIPT | AJAX | NODE.JS | SEQUELIZE | EXPRESS (SESSION) | BCRYPT 
+                hr.star-primary
+                img.img-responsive.img-centered(src='img/langga2.png', alt='')
+                p.lead
+                  | Together with 
+                  a.laura(href='https://lauraxiulan.github.io/personal-website/') Laura
+                  |  I created an app where children can learn various languages through playing games. You can login to your account, play two different games to learn French, Dutch or Spanish. It keeps track of you scores and level. 
+                ul.list-inline.item-details
+                  li
+                    | Date:&nbsp; 
+                    a(href='#') December 2016
+                  li
+                    | Github:&nbsp;
+                    strong
+                      a(href='https://github.com/ilanaenderman/elearn-app') Code
+                button.btn.btn-default(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Close
+
+    // jQuery
+    script(type='text/javascript', src='js/jquery.js')
+    script(type='text/javascript', src='js/jquery.min.js')
+    script(type='text/javascript', src='js/jquery.easing.min.js')
+    // Bootstrap Core JavaScript
+    script(type='text/javascript', src='js/bootstrap.min.js')
+    script(type='text/javascript', src='js/scrolling-nav.js')
+    script(type='text/javascript', src='js/agency.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')
+    script(type='text/javascript', src='js/main.js')
